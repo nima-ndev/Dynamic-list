@@ -15,7 +15,7 @@
     overflow: hidden;
     box-shadow: 1rem 1rem 4rem rgba(22, 22, 22,0.3);
     @include respond(tab-small-2){
-        background: url(../../img/literature-3091212_1920.jpg);
+        background: url(./img/literature-3091212_1920.jpg);
         background-size: cover;
         background-position: center;
         color: white;
@@ -23,7 +23,7 @@
     } 
 
     &_image{
-        background: url(../../img/literature-3091212_1920.jpg);
+        background: url(./img/literature-3091212_1920.jpg);
         height: 100%;
         flex-basis: 30%;
         background-size: cover;
