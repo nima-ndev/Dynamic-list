@@ -1,0 +1,71 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+  @include respond(tab-small){
+    font-size: 50%;
+  } 
+}
+
+
+main {
+    font-family: 'Vazirmatn', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    justify-content: center;
+    padding: 8rem 0 15rem 0;
+  }
+.contaner{
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  // min-height: 100vh;
+  @include respond(tab-land){
+    width: 70vw;
+  } 
+  @include respond(tab-port){
+    width: 75vw;
+  } 
+  @include respond(tab-small-2){
+    width: 85vw;
+  } 
+}
+  .circle1,
+  .circle2 {
+    background: white;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.3)
+    );
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    border-radius: 50%;
+  }
+  
+  .circle1 {
+    top: 5%;
+    left: 10%;
+  }
+  .circle2 {
+    bottom:0;
+    right: 15%;
+  }
+
+.description{
+  align-self: end;
+  color: white;
+  text-align: end;
+  border: solid 1px white;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+}
+

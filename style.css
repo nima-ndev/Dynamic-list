@@ -216,7 +216,7 @@ main {
 }
 @media (max-width: 31.25em) {
   .ordered-list {
-    background: url(./img/literature-3091212_1920.jpg);
+    background: url(../../img/literature-3091212_1920.jpg);
     background-size: cover;
     background-position: center;
     color: white;
@@ -224,7 +224,7 @@ main {
   }
 }
 .ordered-list_image {
-  background: url(./img/literature-3091212_1920.jpg);
+  background: url(../../img/literature-3091212_1920.jpg);
   height: 100%;
   flex-basis: 30%;
   background-size: cover;

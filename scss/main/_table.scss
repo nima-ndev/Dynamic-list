@@ -1,0 +1,81 @@
+.table {
+    background: rgb(255, 172, 18);
+    box-shadow: 0.7rem 0.7rem 5rem rgba(22, 22, 22,0.1);
+    height: 8rem;
+    width: 100%;
+    z-index: 0;
+    margin-top: -2.5rem;
+    border-radius: 0 0 2rem 2rem;
+    backdrop-filter: blur(2rem);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: end;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0.7rem 0.7rem 4rem rgba(22, 22, 22,0.2);
+    &_contaner{
+        width: 80%;
+        padding-bottom: 1rem;
+        display: block;
+        .std{
+            display: none ;
+            width: 100%;
+            padding: 1.5rem 0;
+            // display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            border-image: linear-gradient(to right , rgba(255, 255, 255, 0),rgba(10, 234, 234, 0.215),rgba(58, 186, 229, 0.232),
+             rgba(39, 201, 255, 0.7),
+             rgba(66, 208, 255, 0.5), rgba(255, 255, 255, 0)) 30;
+            border-width: 0.3px;
+            border-style: solid;
+            & >*{
+                flex-grow: 1;
+                flex-basis: 50px;
+                text-align: center;
+            }
+            & :first-child{
+                @include respond(phone){
+                    flex-basis: 300px;
+                    padding: 0 0 2rem 0;
+                  } 
+            }   
+        }
+        &--title{
+            @include respond(phone){
+                position: absolute;
+                opacity: 0;
+              } 
+        }
+        &--header{
+            text-align: end;
+            color:white;
+        }
+    }
+    &:hover{
+        margin-top: -1.5rem;
+    }
+}
+
+.table-active{
+    background: white;
+    min-height: 20vh;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+    );
+    margin-top: 5rem;
+    border-radius: 2rem;
+    z-index: 2;
+    align-items: baseline;
+    box-shadow: none;
+    &_contaner{
+        padding: 2rem 0 4rem 0;
+        margin-top: -2.5rem;
+    }
+}
+
+
+

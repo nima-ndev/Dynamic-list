@@ -1,0 +1,98 @@
+.ordered-list{
+    background: white;
+    min-height: 40vh;
+    width: 100%;
+    background: linear-gradient(
+      to left bottom,
+      rgba(255, 255, 255, 0.9),
+      rgba(239, 239, 239, 0.7)
+    );
+    border-radius: 2rem;   
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 1rem 1rem 4rem rgba(22, 22, 22,0.3);
+    @include respond(tab-small-2){
+        background: url(../../img/literature-3091212_1920.jpg);
+        background-size: cover;
+        background-position: center;
+        color: white;
+        overflow: visible;
+    } 
+
+    &_image{
+        background: url(../../img/literature-3091212_1920.jpg);
+        height: 100%;
+        flex-basis: 30%;
+        background-size: cover;
+        background-position: center;
+        @include respond(tab-small-2){
+            display: none;
+        } 
+    }
+    &_text{
+        flex-basis: 70%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        // justify-content: center;
+        @include respond(tab-small-2){
+            flex-basis: 100%;
+            backdrop-filter: blur(2rem);
+            .orang{
+                color: orange;
+            }
+        } 
+        &--best{
+            margin-top: 1rem;
+            text-align: end;
+            color: rgb(246, 246, 246);
+            width: 97%;
+            padding: 1rem 1rem;
+            background: rgb(255, 166, 0);
+            border-radius: 2rem 0;
+        }
+        &--other{
+            margin-top: 1rem;
+            text-align: end;
+            width: 97%;
+            padding: 0 1rem;
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            p{
+                flex-grow: 1;
+                display: inline-block;
+                flex-basis: 250px;
+                border-image: linear-gradient(to right , rgba(255, 255, 255, 0),rgba(255, 166, 0, 0.215),rgba(255, 166, 0, 0.232),
+                rgba(255, 166, 0, 0.7),
+                rgba(255, 166, 0, 0.5), rgba(255, 255, 255, 0)) 30;
+                border-width: 0.3px;
+                border-style: solid;
+                padding: 1rem 0;
+
+            }
+        }
+    }
+}
+.total-average-box{
+    position: absolute;
+    bottom: 10%;
+    right: 23%;
+    background-color: orange;
+    border-radius: 50%;
+    width: 11rem;
+    height: 11rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1rem 1rem 2rem rgba(22, 22, 22,0.5);
+    @include respond(tab-small-2){
+        bottom: -7%;
+        left: 7%;
+        z-index: 3;
+    } 
+}

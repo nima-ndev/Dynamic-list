@@ -46,9 +46,6 @@ const quickSort = (arr) => {//sort the array by average
 
 //_____________________________________________ INPUT 
 number_of_std=Number(prompt("enter the number of students"));//geting the scores of students
-while(number_of_std!=Number(number_of_std) || number_of_std<0 || number_of_std==""){
-  number_of_std=prompt("Enter a number");
-}
 for(var i=1;i<=number_of_std;i++){  
     var current_std=[];
     for(var j=0;j<3;j++){
